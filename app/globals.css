@@ -89,28 +89,28 @@
   overflow-x: hidden;
   align-items: center;
   justify-content: center;
-  
+  background-image: url("/Gradient.svg");
+  width: 1512px;
+  height: 2046px;
   
 }
 
-.bg:before {
+/* .bg:before {
  
-  position: absolute;
+ 
   content: "";
   z-index: 0;
   width: 100%;
   height: 100%;
   top: 0;
-}
+} */
 
-.bg:after {
+/* .bg:after {
   content: "";
-  background-image: url("/Gradient.svg");
+  
   z-index: 1;
   position: absolute;
-  width: 1512px;
-  height: 2046px;
   
   opacity: 1;
   
-}
+} */

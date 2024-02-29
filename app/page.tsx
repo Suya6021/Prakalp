@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="bg h-full w-full">
+      <div className="bg  w-[1512px]">
+      
         {/* <Image
           src="/Gradient.svg"
           alt="gradient img"

@@ -81,16 +81,36 @@
   
 }
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 flex justify-center items-center flex-col ;
 }
 
-.bg:after{
-  content:"";
-  background-image: url("/Vector.svg");
-  z-index: 1;
+.bg {
+ 
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.bg:before {
+ 
   position: absolute;
+  content: "";
+  z-index: 0;
   width: 100%;
   height: 100%;
   top: 0;
+}
+
+.bg:after {
+  content: "";
+  background-image: url("/Gradient.svg");
+  z-index: 1;
+  position: absolute;
+  width: 1512px;
+  height: 2046px;
+  
   opacity: 1;
+  
 }

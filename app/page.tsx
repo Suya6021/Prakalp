@@ -1,19 +1,58 @@
-import Image from "next/image";
 
+import Nav from "@/components/Nav";
+import { Button } from "@/components/ui/button";
+import { twJoin } from "tailwind-merge";
+import Image from "next/image";
+import { Nunito } from "next/font/google";
+import { Lexend } from "next/font/google";
+import CountDown from "@/components/CountDown";
+import Prize from "@/components/Prize";
+
+const lexend = Lexend({ subsets: ["latin"] });
+const nunito = Nunito({ subsets: ["latin"] });
 export default function Home() {
+  const targetDate = new Date('2024-12-31T23:59:59'); // Se
   return (
     <>
-      <div className="bg  w-[1512px] ">
-        <div className="flex justify-center items-center text-white">
-          hi
+      <div className="bg  w-full ">
+        <Nav />
+        <div className="flex justify-center items-center flex-col mt-[50px] m-2 h-[80vh]">
+          <h5
+            className={twJoin(
+              nunito.className,
+              "italic text-md font-extralight"
+            )}
+          >
+            Innovision-2k24
+          </h5>
+
+          <h1 className="text-[90px] md:text-[108px] font-bold">Prakalp</h1>
+
+          <p
+            className={twJoin(
+              lexend.className,
+              "text-center text-lg/ md:text-lg tracking-wider font-extralight m-6 xl:mx-80"
+            )}
+          >
+            JSPM’s Rajarshi Shahu College of Engineering, Tathawade presents
+            project competition hosted by IT department. Showcase your problem
+            solving skills and innovation in this exciting challenge!
+          </p>
+
+          <div
+            className={twJoin(
+              lexend.className,
+              "m-12 w-full justify-center flex gap-12  font-[400] text-2xl tracking-wide"
+            )}
+          >
+            <Button className="w-[150px] md:w-[200px] h-[50px] md:h-[60px] text-lg ">Register Now</Button>
+            <Button className=" w-[150px] md:w-[200px] h-[50px] md:h-[60px] bg-[#333030] opacity-60 text-white hover:bg-black transition-color text-lg">Rule Book</Button>
+          </div>
         </div>
-        {/* <Image
-          src="/Gradient.svg"
-          alt="gradient img"
-          width={1512}
-          height={2046}
-          className="realative opacity-100"
-        ></Image> */}
+        <div className="w-full ">
+          <CountDown />
+        </div>
+        <Prize/>
       </div>
       <div className=" text-white">hi</div>
     </>

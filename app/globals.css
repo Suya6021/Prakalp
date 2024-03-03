@@ -48,6 +48,9 @@
     --ring: 24 5.7% 82.9%;
   }
 }
+body{
+  @apply dark;
+}
 
 .main {
   width: 100vw;
@@ -86,14 +89,15 @@
 
 .bg {
  
-  overflow-x: hidden;
+  overflow-y: hidden;
   align-items: center;
   justify-content: center;
   background-image: url("/Gradient.svg");
-  width: 1512px;
-  height: 2046px;
+  
+  
   
 }
+
 
 /* .bg:before {
  

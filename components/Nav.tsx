@@ -20,7 +20,7 @@ const Nav = () => {
       </div>
       <div className="m-6">
         <Link href='https://forms.gle/TBR7P9uwkMjbAEAK8'>
-        <Button>Register Now</Button>
+        <Button className="bg-red-500 text-white ">Register Now</Button>
         </Link>
       </div>
     </div>

@@ -1,4 +1,3 @@
-
 import Nav from "@/components/Nav";
 import { Button } from "@/components/ui/button";
 import { twJoin } from "tailwind-merge";
@@ -7,20 +6,23 @@ import { Nunito } from "next/font/google";
 import { Lexend } from "next/font/google";
 import CountDown from "@/components/CountDown";
 import Prize from "@/components/Prize";
+import { BackgroundBeamsDemo } from "@/components/BGBdemo";
+import DomainSelection from "@/components/DomainSelection";
+import Link from "next/link";
 
 const lexend = Lexend({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 export default function Home() {
-  const targetDate = new Date('2024-12-31T23:59:59'); // Se
+  const targetDate = new Date("2024-12-31T23:59:59"); // Se
   return (
     <>
       <div className="bg  w-full ">
         <Nav />
-        <div className="flex justify-center items-center flex-col mt-[50px] m-2 h-[80vh]">
+        <div className="flex justify-center items-center flex-col mt-[50px] m-2 h-[80vh] ">
           <h5
             className={twJoin(
               nunito.className,
-              "italic text-md font-extralight"
+              "italic text-md font-extralight "
             )}
           >
             Innovision-2k24
@@ -45,16 +47,24 @@ export default function Home() {
               "m-12 w-full justify-center flex gap-12  font-[400] text-2xl tracking-wide"
             )}
           >
-            <Button className="w-[150px] md:w-[200px] h-[50px] md:h-[60px] text-lg ">Register Now</Button>
-            <Button className=" w-[150px] md:w-[200px] h-[50px] md:h-[60px] bg-[#333030] opacity-60 text-white hover:bg-black transition-color text-lg">Rule Book</Button>
+            <Button className="w-[150px] md:w-[200px] h-[50px] md:h-[60px] text-lg bg-red-700 text-white">
+              <Link href='https://forms.gle/TBR7P9uwkMjbAEAK8'> Register Now</Link>
+             
+            </Button>
+            <button className=" w-[150px] md:w-[200px] h-[50px] md:h-[60px] bg-[#333030] opacity-60 text-white  transition-color text-lg hover:bg-red-300 hover:text-black ">
+              Rule Book
+            </button>
           </div>
         </div>
         <div className="w-full ">
           <CountDown />
         </div>
-        <Prize/>
+        <Prize />
       </div>
-      <div className=" text-white">hi</div>
+      <div>
+        <BackgroundBeamsDemo></BackgroundBeamsDemo>
+        <DomainSelection></DomainSelection>
+      </div>
     </>
   );
 }

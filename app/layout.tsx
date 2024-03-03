@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import {Orbitron} from "next/font/google"
 
 import { ThemeProvider } from "@/components/themeProvider";
+import Footer from "@/components/Footer";
 const inter = Orbitron({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({
           <main className="app ">
            
             {children}
+            <Footer/>
           </main>
           </ThemeProvider>
         </body>

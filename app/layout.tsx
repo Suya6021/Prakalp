@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,15 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className} >
-      <div className="main">
+      <body className={lexend.className}>
+        <div className="main">
           <div className="gradient" />
-          </div>
-          <main className="app">
-            <Nav />
-            {children}
-          </main>
-        </body>
+        </div>
+        <main className="app">
+          <Nav />
+          {children}
+          <Footer></Footer>
+        </main>
+      </body>
     </html>
   );
 }

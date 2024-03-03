@@ -1,12 +1,18 @@
-import { Lexend } from "next/font/google";
 import React from "react";
 import { IoMdFastforward } from "react-icons/io";
 import { twJoin } from "tailwind-merge";
 
+import { Lexend } from "next/font/google";
+import { BackgroundBeams } from "./BgBeams";
 const lexend = Lexend({
   subsets: ["latin"],
   weight: "300",
 });
+const boldLexend = Lexend({
+  subsets: ["latin"],
+  weight: "700",
+});
+
 const Details = () => {
   let boxes = [
     {
@@ -28,16 +34,19 @@ const Details = () => {
   ];
   return (
     <div
-      className={twJoin("border-[#604897] border-2 w-full tracking-wide", lexend.className)}
+      className={twJoin(
+        "border-[#604897] border-2 w-full tracking-wide",
+        lexend.className
+      )}
     >
-      <div className="w-full bg-[#00000045] text-white grid xl:grid-cols-2 gap-4 place-content-center min-h-[100vh] py-4 px-8 lg:px-48">
+      <div className="w-full bg-black text-white grid xl:grid-cols-2 gap-4 place-content-center md:min-h-[52rem]  py-4 px-8 lg:px-48">
         <div className=" flex flex-col justify-center gap-8">
           <div className="flex flex-col gap-2">
             <div className="flex text-2xl gap-2 text-start items-center">
               <IoMdFastforward size={34} />
               Event Details
             </div>
-            <div className="text-6xl font-semibold">
+            <div className={twJoin("text-6xl ", boldLexend.className)}>
               Things to{" "}
               <span className="bg-gradient-to-r from-[#D02626] to-[#3B2DE3] inline-block text-transparent bg-clip-text">
                 Note!

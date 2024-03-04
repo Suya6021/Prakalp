@@ -3,7 +3,6 @@ import { TypewriterEffect, TypewriterEffectSmooth } from "./ui/typewriter";
 import { Lexend } from "next/font/google";
 import { twJoin } from "tailwind-merge";
 import Image from "next/image";
-import { BackgroundBeams } from "./BgBeams";
 const lexend = Lexend({
   subsets: ["latin"],
   weight: "300",

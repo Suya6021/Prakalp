@@ -6,6 +6,7 @@ import { twJoin } from "tailwind-merge";
 const lexend = Lexend({ subsets: ["latin"] });
 const Prize = () => {
   return (
+    
     <div className={twJoin(lexend.className, "w-full mt-[180px]")}>
       <div className="md:ml-28">
         <Image
@@ -56,7 +57,12 @@ const Prize = () => {
             <p className="lg:text-xl">3rd Prize</p>
             <h4  className="xl lg:text-3xl">upto 5,000/-</h4>
           </div>
+          
         </div>
+        <div className="text-lg mt-20">
+          <h5>Note : Winners will be selected from all the tracks(domains)</h5>
+
+          </div>
       </div>
     </div>
   );

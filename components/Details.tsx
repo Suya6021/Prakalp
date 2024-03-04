@@ -3,7 +3,6 @@ import { IoMdFastforward } from "react-icons/io";
 import { twJoin } from "tailwind-merge";
 
 import { Lexend } from "next/font/google";
-import { BackgroundBeams } from "./BgBeams";
 const lexend = Lexend({
   subsets: ["latin"],
   weight: "300",

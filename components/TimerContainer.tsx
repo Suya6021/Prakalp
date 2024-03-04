@@ -83,14 +83,14 @@ export const TimerContainer = ({
         <h2>
           Time’s{" "}
           <span
-            className={twJoin(lexend.className, "italic text-xl md:text-2xl/4")}
+            className={twJoin(lexend.className, "italic text-xl font-semibold md:text-2xl/4")}
           >
             running
           </span>{" "}
           up for registration!
         </h2>
       </div>
-      <div className="flex  py-2 w-full  md:items-center lg:max-w-[1100px] justify-evenly md:mt-2  rounded-xl  md:px-2 md:py-8 ">
+      <div className="flex  py-2 w-full  md:items-center lg:max-w-[1100px] justify-center gap-1 md:gap-12  md:mt-2  rounded-xl  md:px-2 md:py-8 ">
         <NumberBox num={days} unit="Days" flip={daysFlip} />
         <NumberBox num={hours} unit="Hours" flip={hoursFlip} />
 

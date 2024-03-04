@@ -34,7 +34,7 @@ const Details = () => {
   return (
     <div
       className={twJoin(
-        "w-full h-full md:min-h-[52rem] border-[#604897] border-2 bg-black text-white grid xl:grid-cols-2 gap-4 place-content-center md:h-full  py-4 px-8 lg:px-48",
+        "w-full sm:h-full md:min-h-[52rem] border-[#604897] border-2 bg-black text-white grid xl:grid-cols-2 gap-4 place-content-center   md:py-4 p-8 py-10 lg:px-48",
         lexend.className
       )}
     >

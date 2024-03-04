@@ -1,5 +1,5 @@
 import Nav from "@/components/Nav";
-import { Button } from "@/components/ui/button";
+
 import { twJoin } from "tailwind-merge";
 import Image from "next/image";
 import { Nunito } from "next/font/google";
@@ -9,14 +9,15 @@ import Prize from "@/components/Prize";
 import { BackgroundBeamsDemo } from "@/components/BGBdemo";
 import DomainSelection from "@/components/DomainSelection";
 import Link from "next/link";
-
+import { Button as moving  } from "@/components/ui/moving-border";
+import { Button } from "@/components/ui/button";
 const lexend = Lexend({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 export default function Home() {
   const targetDate = new Date("2024-12-31T23:59:59"); // Se
   return (
     <>
-      <div className="bg  w-full ">
+      <div className="bg  w-full md:h-[300vh]">
         <Nav />
         <div className="flex justify-center items-center flex-col mt-[50px] m-2 h-[80vh] ">
           <h5
@@ -47,7 +48,7 @@ export default function Home() {
               "m-12 w-full justify-center flex gap-12  font-[400] text-2xl tracking-wide"
             )}
           >
-            <Button className="w-[150px] md:w-[200px] h-[50px] md:h-[60px] text-lg bg-red-700 text-white">
+            <Button className="w-[150px] md:w-[200px] h-[50px] md:h-[60px] text-lg bg-red-700 text-white ">
               <Link href='https://forms.gle/TBR7P9uwkMjbAEAK8'> Register Now</Link>
              
             </Button>

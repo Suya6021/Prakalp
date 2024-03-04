@@ -1,8 +1,9 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-
+import { BackgroundGradient } from "./ui/background-gradient";
 const Nav = () => {
   return (
     <div className="w-full h-20 flex justify-between backdrop-blur-sm sticky top-0">
@@ -20,6 +21,7 @@ const Nav = () => {
       </div>
       <div className="m-6">
         <Link href='https://forms.gle/TBR7P9uwkMjbAEAK8'>
+         
         <Button className="bg-red-500 text-white ">Register Now</Button>
         </Link>
       </div>

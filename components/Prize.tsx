@@ -7,7 +7,7 @@ const lexend = Lexend({ subsets: ["latin"] });
 const Prize = () => {
   return (
     
-    <div className={twJoin(lexend.className, "w-full mt-[180px]")}>
+    <div className={twJoin(lexend.className, "w-full mt-[180px] h-full")}>
       <div className="md:ml-28">
         <Image
           src="/Opper.svg"
@@ -19,11 +19,11 @@ const Prize = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-          <p className="font-extralight lg:text-xl"> Prize pool worth 50,000/-</p>
-          <h3 className="font-[700] text-5xl lg:text-7xl">Prizes for Winner's</h3>
+          <p className="font-extralight lg:text-xl text-center "> Prize pool worth 50,000/-</p>
+          <h3 className="font-[700] text-4xl lg:text-7xl w-full whitespace-normal">Prizes for Winner's</h3>
         </div> 
-        <div className="flex gap-20 mt-[80px] w-full justify-center md:justify-around items-center">
-          <div className="flex flex-col justify-center items-center  ">
+        <div className="flex gap-12 mt-[80px] w-full justify-center md:justify-around items-center">
+          <div className="flex flex-col justify-center items-center p-2 ">
             <Image
               src="./medal.svg"
               alt="medal icon"
@@ -31,8 +31,8 @@ const Prize = () => {
               height={100}
               className="lg:w-[150px]"
             ></Image>
-            <p className="lg:text-xl">2nd Prize</p>
-            <h4 className="xl lg:text-3xl">upto 10,000/-</h4>
+            <p className="lg:text-xl ">2nd Prize</p>
+            <h4 className="xl lg:text-3xl whitespace-nowrap">upto 10,000/-</h4>
           </div>
           <div className="flex flex-col justify-center  items-center">
             {" "}
@@ -44,7 +44,7 @@ const Prize = () => {
               className="lg:w-[150px]"
             ></Image>
             <p className="lg:text-xl">1nd Prize</p>
-            <h4  className="xl lg:text-3xl">upto 25,000/-</h4>
+            <h4  className="xl lg:text-3xl whitespace-nowrap">upto 25,000/-</h4>
           </div>
           <div className="flex flex-col justify-center items-center">
             <Image
@@ -55,7 +55,7 @@ const Prize = () => {
               className="lg:w-[150px]"
             ></Image>
             <p className="lg:text-xl">3rd Prize</p>
-            <h4  className="xl lg:text-3xl">upto 5,000/-</h4>
+            <h4  className="xl lg:text-3xl whitespace-nowrap">upto 5,000/-</h4>
           </div>
           
         </div>

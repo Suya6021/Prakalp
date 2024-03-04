@@ -93,9 +93,9 @@ body{
   align-items: center;
   justify-content: center;
   background-image: url("/Gradient.svg");
+
   
   
-  @apply lg:h-[2000px] h-[1600px] 
 }
 
 

@@ -10,7 +10,7 @@ interface numProp {
 
 export const NumberBox = ({ num, unit, flip }: numProp) => {
     return (
-        <div className={twJoin(lexend.className,"flex flex-col items-center mt-4 p-3 md:p-5 min-w-24 max-w-28 md:w-full  bg-[#292929] m-2 rounded-lg border-2 border-b-0 bg-opacity-50 ")} >
+        <div className={twJoin(lexend.className,"flex flex-col items-center mt-4 p-2 md:p-5 min-w-24  max-w-28 md:min-w-40  bg-[#292929] m-1 rounded-lg border-2 border-b-0 bg-opacity-50 ")} >
            <div className='flex flex-col justify-center items-center'>
            <p className="text-md  font-semibold   md:text-2xl ">
                 {unit}

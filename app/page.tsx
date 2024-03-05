@@ -12,6 +12,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import Details from "@/components/Details";
+import DownloadButton from "@/components/DownloadButton";
 const lexend = Lexend({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 export default function Home() {
@@ -55,9 +56,7 @@ export default function Home() {
                 Register Now
               </Link>
             </Button>
-            <button className=" w-[150px] md:w-[200px] h-[50px] md:h-[60px] bg-[#333030] opacity-60 text-white  transition-color text-lg hover:bg-red-300 hover:text-black ">
-              Rule Book
-            </button>
+            <DownloadButton></DownloadButton>
           </div>
         </div>
         <div className="w-full ">

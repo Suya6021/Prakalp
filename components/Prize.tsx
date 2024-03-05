@@ -52,7 +52,7 @@ const Prize = () => {
               height={100}
               className="w-[50px] md:w-[150px]"
             ></Image>
-            <p className="lg:text-xl">1nd Prize</p>
+            <p className="lg:text-xl">1st Prize</p>
             <h4 className="xl lg:text-3xl whitespace-nowrap">upto 25,000/-</h4>
           </div>
           <div className="flex flex-col justify-center items-center">

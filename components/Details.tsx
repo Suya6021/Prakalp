@@ -1,12 +1,13 @@
 import React from "react";
 import { IoMdFastforward } from "react-icons/io";
 import { twJoin } from "tailwind-merge";
-
 import { Lexend } from "next/font/google";
+
 const lexend = Lexend({
   subsets: ["latin"],
   weight: "300",
 });
+
 const boldLexend = Lexend({
   subsets: ["latin"],
   weight: "700",

@@ -41,7 +41,7 @@ const Footer = () => {
 
   return (
     <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-1 md:justify-evenly text-[#D3D3D3] bg-[#00000059] md:py-20 p-4 md:p-12">
-      <div className="flex justify-center md:justify-start items-center gap-3">
+      <div className="flex  justify-center md:justify-start items-center gap-3">
         <Image
           src={"/PrakalpLogo.png"}
           width={70}

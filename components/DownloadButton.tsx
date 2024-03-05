@@ -26,7 +26,7 @@ const DownloadButton = () => {
   return (
     <div>
       <button
-        className=" w-[150px] md:w-[200px] h-[50px] md:h-[60px] bg-[#060606] opacity-90 rounded-md text-white  transition-color text-lg hover:bg-red-300 hover:text-black "
+        className=" w-[150px] md:w-[200px] h-[50px] md:h-[60px] bg-[#121212] opacity-90 rounded-md text-white  transition-color text-lg hover:bg-black"
         onClick={handleDownload}
       >
         Rule Book

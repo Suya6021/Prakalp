@@ -29,7 +29,7 @@ const Details = () => {
     },
     {
       heading: "Event Fees",
-      content: "Rs.100 /team",
+      content: "Rs.200 /team",
     },
   ];
   return (

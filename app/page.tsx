@@ -50,7 +50,7 @@ export default function Home() {
               "m-12 w-full justify-center flex gap-12  font-[400] text-2xl tracking-wide"
             )}
           >
-            <Button className="w-[150px] md:w-[200px] h-[50px] md:h-[60px] text-lg bg-red-700 text-white ">
+            <Button className="w-[150px] md:w-[200px] h-[50px] md:h-[60px] text-lg bg-red-700 hover:bg-red-900 text-white ">
               <Link href="https://forms.gle/TBR7P9uwkMjbAEAK8">
                 {" "}
                 Register Now

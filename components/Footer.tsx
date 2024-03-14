@@ -63,7 +63,7 @@ const Footer = () => {
             Shweta Darade :<span> +91 9359694588</span>
           </h4>
           <h4>
-            Omkar Malve :<span> +91 7768876831</span>
+            Mrunal Pawar :<span> +91 7499889050</span>
           </h4>
         </div>
       </div>

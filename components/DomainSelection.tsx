@@ -3,7 +3,6 @@ import { TypewriterEffect, TypewriterEffectSmooth } from "./ui/typewriter";
 import { Lexend } from "next/font/google";
 import { twJoin } from "tailwind-merge";
 import Image from "next/image";
-import { BackgroundBeams } from "./BgBeams";
 const lexend = Lexend({
   subsets: ["latin"],
   weight: "300",
@@ -48,12 +47,12 @@ const DomainSelection = () => {
   return (
     <div
       className={twJoin(
-        "w-full tracking-wider flex flex-col pt-32 md:pt-48 gap-12 p-12  md:min-h-[50rem] lg:px-52",
+        "w-full tracking-wider flex flex-col pt-12 md:pt-48 gap-12 p-12  md:min-h-[50rem] lg:px-52",
         lexend.className
       )}
     >
       <div className="flex flex-col gap-4">
-        <h4 className="text-2xl text-[#E2E2E2]">Domain Selection</h4>
+        <h4 className="text-xl md:text-2xl text-[#E2E2E2]">Domain Selection</h4>
         <div className="hidden md:block ">
           <TypewriterEffectSmooth
             words={[
@@ -69,7 +68,7 @@ const DomainSelection = () => {
         <h1
           className={twJoin(
             boldLexend.className,
-            "text-5xl block md:hidden text-white"
+            "text-3xl block md:hidden text-white"
           )}
         >
           Which domains can we choose?

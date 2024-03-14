@@ -4,7 +4,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/background-gradient";
-const Nav = () => {
+const Navbar = () => {
   return (
     <div className="w-full h-20 flex justify-between backdrop-blur-sm sticky top-0">
       <div className="flex justify-center items-center ml-2">
@@ -29,4 +29,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;
